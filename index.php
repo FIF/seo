@@ -70,7 +70,8 @@
                     <input type="button" class="btn btn-danger" id="usall" value="Unselect All"><br>
                 	<div class="horizontalLine"></div>
                 </form>
-                <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+                <!-- //jquery-file-upload.appspot.com/ -->
+                <form id="fileupload" action="" method="POST" enctype="multipart/form-data">
                     Upload Files:<input type="hidden" name="idFile" value="5">
                     <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
                     <div class="row fileupload-buttonbar">
@@ -196,7 +197,7 @@
             }
             $( document ).ready(function() {
               var iframe_height = parseInt($('html').height()); 
-              window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+              window.parent.postMessage( iframe_height, 'http://localhost'); // http://bootsnipp.com/
             });
         </script>
         <script src="js/jquery-ui.js"></script>
